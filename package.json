@@ -3,8 +3,8 @@
   "private": true,
   "version": "0.0.1",
   "engines": {
-    "node": "4.2.x",
-    "npm": "3.5.x"
+    "node": "4.4.X",
+    "npm": "3.8.x"
   },
   "description": "Starting Kit for building application using Material Design Lite, React and Redux",
   "repository": {
