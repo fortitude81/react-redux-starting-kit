@@ -3,6 +3,7 @@ import 'file?name=[name].[ext]!./index.html';
 import 'babel-polyfill';
 import 'fastclick';
 import 'font-awesome-sass-loader';
+import 'material-design-lite';
 import './scss/main.scss';
 
 // linbraries and tools
