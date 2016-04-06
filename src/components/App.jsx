@@ -4,7 +4,7 @@ import WelcomeMsg from '../components/WelcomeMsg.jsx';
 import MiniDashboard from '../components/MiniDashboard.jsx';
 
 const App = () => (
-  <MiniDashboard />
+  <WelcomeMsg />
 );
 
 export default App;
