@@ -2,23 +2,12 @@
 @import "~material-design-lite/material";
 @import "~animate.css/animate";
 @import "./variables.scss";
+@import "./dashboard.scss";
+@import "./welcomeMsg.scss";
 
 body {
 	padding: 0;
 	margin: 0;
-	font-family: Roboto, sans-serif;
+	font-family: 'Roboto', 'Helvetica', sans-serif;
 	background-color: $background-color;
-}
-
-.demo-card-wide.mdl-card {
-  width: 512px;
-  margin: 25px auto;
-}
-.demo-card-wide > .mdl-card__title {
-  color: #fff;
-  height: 176px;
-  background: url('http://icdn8.digitaltrends.com/image/funny-grumpy-cat-images-hd-wallpaper-1080x611-640x0.jpg') center / cover;
-}
-.demo-card-wide > .mdl-card__menu {
-  color: #fff;
 }

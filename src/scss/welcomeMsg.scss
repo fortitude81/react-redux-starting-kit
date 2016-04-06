@@ -1,0 +1,14 @@
+.demo-card-wide.mdl-card {
+  width: 512px;
+  margin: 25px auto;
+
+  > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('http://icdn8.digitaltrends.com/image/funny-grumpy-cat-images-hd-wallpaper-1080x611-640x0.jpg') center / cover;
+  }
+
+  > .mdl-card__menu {
+    color: #fff;
+  }
+}
