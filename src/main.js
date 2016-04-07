@@ -18,9 +18,21 @@ import store from './stores';
 // components
 import AppContainer from './containers/AppContainer.jsx';
 
+// actions
+import * as miniDashboardActions from './actions/miniDashboardActions';
+
 ReactDOM.render(
   <Provider store={store}>
     <AppContainer />
   </Provider>,
   document.getElementById('app')
 );
+
+const entries = [
+  {title: 'Foo', msg: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vitae velit a congue.'},
+  {title: 'Bar', msg: 'Etiam pretium a elit in varius. Ut vel est accumsan, interdum erat sit amet, lacinia risus.'}
+];
+
+setTimeout(() => {
+    store.dispatch(miniDashboardActions.loadEntries(entries));
+});
