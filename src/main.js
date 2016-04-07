@@ -19,7 +19,6 @@ import store from './stores';
 import AppContainer from './containers/AppContainer.jsx';
 
 // actions
-import * as miniDashboardActions from './actions/miniDashboardActions';
 import * as welcomeMsgActions from './actions/welcomeMsgActions';
 
 ReactDOM.render(
@@ -41,6 +40,5 @@ const welcomeMsg = {
 };
 
 setTimeout(() => {
-    store.dispatch(miniDashboardActions.loadEntries(entries));
     store.dispatch(welcomeMsgActions.displayWelcomeMsg(welcomeMsg.title, welcomeMsg.msg));
 });
