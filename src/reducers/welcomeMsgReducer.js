@@ -1,10 +1,9 @@
 import * as CONST from '../constants';
-import initialState from '../initialState';
 
-const welcomeMsgReducer = (state = initialState.welcomeMsg, action) => {
+const welcomeMsgReducer = (state = '', action) => {
   switch (action.type) {
     case CONST.DISPLAY_WELCOME_MSG:
-      return Object.assign({}, state);
+      return Object.assign({}, state.welcomeMsg);
 
     default:
         return state;

@@ -1,20 +1,12 @@
 import React from 'react';
-import {connect} from 'react-redux';
 
-import * as welcomeMsgActions from '../actions/welcomeMsgActions';
+import MiniDashboardContainer from '../containers/MiniDashboardContainer.jsx';
+// import WelcomeMsgContainer from '../containers/WelcomeMsgContainer.jsx';
 
-import App from '../components/App.jsx';
+const AppConainer = () => (
+  <div className="mdl-layout__container">
+    <MiniDashboardContainer />
+  </div>
+);
 
-const mapStateToProps = (state) => {
-  return {
-    welcomeMsg: state.welcomeMsg
-  };
-};
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-    // onDecrease: (id) => dispatch(widgetListActions.decreaseWidgetValue(id)),
-  };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default AppConainer;
