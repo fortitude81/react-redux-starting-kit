@@ -7,7 +7,8 @@ import WelcomeMsg from '../components/WelcomeMsg.jsx';
 
 const mapStateToProps = (state) => {
   return {
-    welcomeMsg: state.welcomeMsg
+    title: state.welcomeMsg.title,
+    msg: state.welcomeMsg.msg
   };
 };
 

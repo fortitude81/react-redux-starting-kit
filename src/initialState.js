@@ -1,4 +1,7 @@
 export default {
-  welcomeMsg: 'Welcome to the Starter Kit',
+  welcomeMsg: {
+    title: 'Default Title',
+    msg: 'Default message...'
+  },
   miniDashboard: []
 };

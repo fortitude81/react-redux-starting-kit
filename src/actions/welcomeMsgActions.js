@@ -1,9 +1,9 @@
 import * as CONST from '../constants';
-import initialState from '../initialState';
 
-export const displayWelcomeMsg = () => {
+export const displayWelcomeMsg = (title, msg) => {
   return {
     type: CONST.DISPLAY_WELCOME_MSG,
-    welcomeMsg: initialState.welcomeMsg
+    title: title,
+    msg: msg
   };
 };
