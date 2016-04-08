@@ -21,7 +21,6 @@ const MiniDashboard = () => (
       </div>
     </div>
 
-    ))}
   </div>
 );
 
