@@ -3,7 +3,7 @@ import React from 'react';
 const MiniDashboard = () => (
   <div className="demo-cards mdl-cell--12-col mdl-grid">
 
-    <div key={index} className="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--6-col-tablet mdl-cell--6-col-desktop">
+    <div className="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--6-col-tablet mdl-cell--6-col-desktop">
       <div className="mdl-card__title mdl-card--expand mdl-color--teal-300">
         <h2 className="mdl-card__title-text">{`Foo`}</h2>
       </div>
@@ -12,7 +12,7 @@ const MiniDashboard = () => (
       </div>
     </div>
 
-    <div key={index} className="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--6-col-tablet mdl-cell--6-col-desktop">
+    <div className="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--6-col-tablet mdl-cell--6-col-desktop">
       <div className="mdl-card__title mdl-card--expand mdl-color--teal-300">
         <h2 className="mdl-card__title-text">{`Bar`}</h2>
       </div>
