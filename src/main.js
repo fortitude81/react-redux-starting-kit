@@ -20,6 +20,7 @@ import AppContainer from './containers/AppContainer.jsx';
 
 // actions
 import * as welcomeMsgActions from './actions/welcomeMsgActions';
+import * as miniDashboardActions from './actions/miniDashboardActions';
 
 ReactDOM.render(
   <Provider store={store}>
@@ -36,9 +37,10 @@ const entries = [
 
 const welcomeMsg = {
   title: 'Welcome to the Starter Kit',
-  msg: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vitae velit a congue.',
+  msg: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vitae velit a congue.'
 };
 
 setTimeout(() => {
     store.dispatch(welcomeMsgActions.displayWelcomeMsg(welcomeMsg.title, welcomeMsg.msg));
+    store.dispatch(miniDashboardActions.retrieveEntries(entries));
 });
