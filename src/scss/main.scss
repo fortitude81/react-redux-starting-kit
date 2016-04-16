@@ -2,12 +2,16 @@
 @import "~material-design-lite/material";
 @import "~animate.css/animate";
 @import "./variables.scss";
-@import "./dashboard.scss";
-@import "./welcomeMsg.scss";
 
 body {
 	padding: 0;
 	margin: 0;
 	font-family: 'Roboto', 'Helvetica', sans-serif;
 	background-color: $background-color;
+}
+
+.cards-wrapper {
+	display: flex;
+	align-content: space-between;
+	flex-wrap: wrap;
 }

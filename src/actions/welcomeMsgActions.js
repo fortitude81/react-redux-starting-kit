@@ -1,9 +1,12 @@
 import * as CONST from '../constants';
 
-export const displayWelcomeMsg = (title, msg) => {
+export const displayWelcomeMsg = (title, msg, imgUrl) => {
   return {
     type: CONST.DISPLAY_WELCOME_MSG,
-    title: title,
-    msg: msg
+    payload: {
+      title: title,
+      msg: msg,
+      imgUrl: imgUrl
+    }
   };
 };

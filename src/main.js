@@ -25,16 +25,17 @@ ReactDOM.render(
 
 // TEST DATA
 const entries = [
-  {title: 'Foo', msg: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vitae velit a congue.'},
-  {title: 'Bar', msg: 'Etiam pretium a elit in varius. Ut vel est accumsan, interdum erat sit amet, lacinia risus.'}
+  {title: 'Foo', msg: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vitae velit a congue.', imgUrl: 'http://lorempixel.com/500/300/city/'},
+  {title: 'Bar', msg: 'Etiam pretium a elit in varius. Ut vel est accumsan, interdum erat sit amet, lacinia risus.', imgUrl: 'http://lorempixel.com/500/300/nature/'}
 ];
 
 const welcomeMsg = {
   title: 'Welcome to the Starter Kit',
-  msg: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vitae velit a congue.'
+  msg: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vitae velit a congue.',
+  imgUrl: 'http://icdn8.digitaltrends.com/image/funny-grumpy-cat-images-hd-wallpaper-1080x611-640x0.jpg'
 };
 
 setTimeout(() => {
-    store.dispatch(welcomeMsgActions.displayWelcomeMsg(welcomeMsg.title, welcomeMsg.msg));
+    store.dispatch(welcomeMsgActions.displayWelcomeMsg(welcomeMsg.title, welcomeMsg.msg, welcomeMsg.imgUrl));
     store.dispatch(miniDashboardActions.retrieveEntries(entries));
 });

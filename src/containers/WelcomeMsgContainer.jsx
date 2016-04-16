@@ -3,12 +3,13 @@ import {connect} from 'react-redux';
 
 import * as welcomeMsgActions from '../actions/welcomeMsgActions';
 
-import WelcomeMsg from '../components/WelcomeMsg.jsx';
+import SimpleCard from '../components/SimpleCard.jsx';
 
 const mapStateToProps = (state) => {
   return {
     title: state.welcomeMsg.title,
-    msg: state.welcomeMsg.msg
+    msg: state.welcomeMsg.msg,
+    imgUrl: state.welcomeMsg.imgUrl
   };
 };
 
@@ -18,4 +19,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(WelcomeMsg);
+export default connect(mapStateToProps, mapDispatchToProps)(SimpleCard);

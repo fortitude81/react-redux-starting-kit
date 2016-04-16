@@ -1,17 +1,9 @@
 import React from 'react';
+import SimpleCard from '../components/SimpleCard.jsx';
 
 const MiniDashboard = ({entries}) => (
-  <div className="demo-cards mdl-cell--12-col mdl-grid">
-    {entries.map((entry, index) => (
-      <div key={index} className="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--6-col-tablet mdl-cell--6-col-desktop">
-        <div className="mdl-card__title mdl-card--expand mdl-color--teal-300">
-          <h2 className="mdl-card__title-text">{entry.title}</h2>
-        </div>
-        <div className="mdl-card__supporting-text mdl-color-text--grey-600">
-          {entry.msg}
-        </div>
-      </div>
-    ))}
+  <div className="cards-wrapper">
+    {entries.map((entry, index) => <SimpleCard key={index} {...entry} />)}
   </div>
 );
 

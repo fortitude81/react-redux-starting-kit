@@ -1,8 +1,8 @@
 import * as CONST from '../constants';
 
-export const retrieveEntries = (data) => {
+export const retrieveEntries = (entries) => {
   return {
     type: CONST.RETRIEVE_MINIDASHBOARD_ENTRIES,
-    data: data
+    payload: entries
   };
 };
