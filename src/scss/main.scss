@@ -1,7 +1,8 @@
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
-@import "~material-design-lite/material";
-@import "~animate.css/animate";
-@import "./variables.scss";
+@import '~material-design-lite/material';
+@import '~animate.css/animate';
+@import './variables.scss';
+@import './simpleCard.scss';
 
 body {
 	padding: 0;
@@ -11,7 +12,14 @@ body {
 }
 
 .cards-wrapper {
+	.card-item {
+		@extend .simple-card-wide, .mdl-card, .mdl-shadow--2dp;
+	}
 	display: flex;
 	align-content: space-between;
 	flex-wrap: wrap;
+}
+
+.welcome-card {
+	@extend .simple-card-wide, .mdl-card, .mdl-shadow--2dp;
 }
