@@ -1,12 +1,11 @@
 import {combineReducers} from 'redux';
 
-// import all custom reducers here
-// example
-// import example from '../reducers/exampleReducer';
+import welcomeCard from '../reducers/welcomeCardReducer';
+import cardList from '../reducers/cardListReducer';
 
-// combine reducers here, comma separated
-// example
-// const rootReducer = combineReducers({ example });
-const rootReducer = combineReducers({ });
+const rootReducer = combineReducers({
+  welcomeCard,
+  cardList
+});
 
 export default rootReducer;

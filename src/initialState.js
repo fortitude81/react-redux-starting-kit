@@ -8,3 +8,12 @@
 //   },
 //   miniDashboard: []
 // };
+
+export default {
+  welcomeCard: {
+    title: 'Welcome',
+    msg: 'Welcome to Introduction to React at Dallas',
+    imgUrl: 'http://lorempixel.com/400/200'
+  },
+  cardList: []
+};

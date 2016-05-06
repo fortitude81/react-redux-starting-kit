@@ -8,23 +8,34 @@ import './scss/main.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import injectTapEventPlugin from 'react-tap-event-plugin';
+import {Provider} from 'react-redux';
+import store from './store';
 
-import StaticMiniDashboard from './components/StaticMiniDashboard.jsx';
+import MiniDashboard from './components/MiniDashboard.jsx';
+
+import * as miniDashboardActions from './actions/miniDashboardActions';
 
 // TEST DATA
 const testData = {
-  welcomeMsg: {
+  welcomeCard: {
     title: 'Welcome to the Starter Kit',
     msg: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vitae velit a congue.',
     imgUrl: 'http://icdn8.digitaltrends.com/image/funny-grumpy-cat-images-hd-wallpaper-1080x611-640x0.jpg'
   },
-  cards: [
+  cardList: [
     {title: 'Foo', msg: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vitae velit a congue.', imgUrl: 'http://lorempixel.com/500/300/city/'},
     {title: 'Bar', msg: 'Etiam pretium a elit in varius. Ut vel est accumsan, interdum erat sit amet, lacinia risus.', imgUrl: 'http://lorempixel.com/500/300/nature/'}
   ]
 };
 
 ReactDOM.render(
-  <StaticMiniDashboard {...testData} />,
+  <Provider store={store}>
+    <MiniDashboard />
+  </Provider>,
   document.getElementById('app')
 );
+
+setTimeout(() => {
+  store.dispatch(miniDashboardActions.displayWelcomeCard(testData.welcomeCard));
+  store.dispatch(miniDashboardActions.displayCards(testData.cardList));
+});
