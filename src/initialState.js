@@ -8,3 +8,12 @@
 //   },
 //   miniDashboard: []
 // };
+
+export default {
+  welcomeCard: {
+    title: 'Hi!',
+    msg: 'Welcome to React Dallas',
+    imgUrl: ''
+  },
+  cardList: []
+};
